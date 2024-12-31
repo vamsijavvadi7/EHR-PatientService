@@ -15,6 +15,6 @@ public class Address {
     private String city;
     private String state;
     private String postalCode;
-    @OneToOne(mappedBy = "address")
-    private Patient patient;
+    //@OneToOne(mappedBy = "address")
+    //private Patient patient;
 }

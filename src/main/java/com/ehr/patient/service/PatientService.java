@@ -62,7 +62,9 @@ public class PatientService {
         address.setState(patientPersonalDetailsDto.getAddress().getState());
         address.setStreet(patientPersonalDetailsDto.getAddress().getStreet());
         address.setPostalCode(patientPersonalDetailsDto.getAddress().getPostalCode());
+        patient.setAddress(address);
         try {
+
             Patient savedPatient = patientRepository.save(patient);
 
             return new ResponseEntity<>(patient, HttpStatus.CREATED);
