@@ -100,6 +100,7 @@ public class PatientService {
 
         // Map UserDto and Patient to PatientPersonalDetailsDto
         PatientPersonalDetailsDto patientDetailsDto = patientMapper.toPersonalDto(patient);
+
         // Map fields from UserDto
         patientDetailsDto.setUserid(userDto.getId());
         patientDetailsDto.setEmail(userDto.getEmail());
